@@ -1,0 +1,9 @@
+certifi==2024.8.30
+charset-normalizer==2.0.12
+idna==3.10
+pymodbus==2.5.3
+pyserial==3.5
+requests==2.27.1
+schedule==1.2.2
+six==1.16.0
+urllib3==1.26.20
