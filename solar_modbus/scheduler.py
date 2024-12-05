@@ -1,8 +1,8 @@
 import schedule
 import time
 from threading import Lock
-from logger import log_message
-from modbus_reader import read_inverter_data
+from solar_modbus.logger import log_message
+from solar_modbus.modbus_reader import read_inverter_data
 
 lock = Lock()
 

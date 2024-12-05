@@ -2,8 +2,8 @@ from pymodbus.client.sync import ModbusSerialClient as ModbusClient
 from pymodbus.exceptions import ModbusIOException
 from datetime import datetime
 import time
-from logger import log_message
-from om2m import create_cin
+from solar_modbus.logger import log_message
+from solar_modbus.om2m import create_cin
 import json
 
 def read_inverter_data(modbus_settings, parameters, url):

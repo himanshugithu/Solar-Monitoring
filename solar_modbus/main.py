@@ -1,7 +1,7 @@
 import json
 import argparse
-from logger import configure_logging, log_message
-from scheduler import start_scheduler
+from .logger import configure_logging, log_message
+from .scheduler import start_scheduler
 
 def load_config(config_file):
     with open(config_file, 'r') as file:
