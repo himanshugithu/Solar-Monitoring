@@ -64,6 +64,34 @@ The project uses the following environment variables for configuration:
 - `OM2M_URL`: URL of the OM2M server. 
 > The OM2M_URL in the environment is just for testing not needed for production deployment 
 
+### Installation & Setup
+
+1. Clone the GitHub repository:
+
+    ```bash
+    git clone https://github.com/your-repo/solar-monitoring.git
+    cd solar-monitoring
+    ```
+
+2. Create a Python3 virtual environment:
+
+    ```bash
+    python3 -m venv venv
+    ```
+
+3. Activate the virtual environment:
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+4. Install the module and its dependencies:
+
+    ```bash
+    pip install .
+    ````
+
+
 ## Running the Program
 
 To run the program, use the following command:
