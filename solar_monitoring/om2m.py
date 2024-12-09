@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-
+from solar_monitoring.logger import log_message
 def get_credentials():
     """Get credentials from environment variables."""
     return {
@@ -49,6 +49,7 @@ def create_cin(uri_cnt, value, cin_labels=["AE-SL", "SL-VN02-00", "V1.0.1", "SL-
         response = requests.post(uri_cnt, data=json.dumps(body), headers=headers)
     print('Return code : {}'.format(response.status_code))
     print('Return Content : {}'.format(response.text))
+    log_message(f"Return code : {response.status_code}")
 
 if __name__ == "__main__":
     _url = os.getenv('OM2M_URL', 'http://dev-onem2m.iiit.ac.in:443/~/in-cse/in-name/AE-EM/EM-CR-SB00-02/Data')
